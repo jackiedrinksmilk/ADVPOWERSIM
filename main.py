@@ -3,8 +3,8 @@ from milestone1_ConductorData import ConductorData
 from milestone1_geometry import Geometry
 from milestone1_Bundles import Bundles
 
-PartridgeData = ConductorData((.0216*12), 0.321, 0.350)
-BundledPartridgeData = Bundles(2, PartridgeData, 2.0)
+PartridgeData = ConductorData(0.26, 0.321, 0.385)
+BundledPartridgeData = Bundles(2, PartridgeData, 18.0)
 PhaseGeometry = Geometry(0, 0, 9.75, 0, 19.5, 0)
 
 Matrix = YBus("Matrix")

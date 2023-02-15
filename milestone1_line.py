@@ -26,14 +26,16 @@ class Line:
 
         Zbase = (self.v_base ** 2) / Line.s_base
 
-        self.Rpu = (linebundle.R / Zbase) * self.length # Resistance in per unit
+        self.Rpu = (linebundle.res / Zbase) * self.length # Resistance in per unit
         self.Xpu = ((self.L * Line.w) / Zbase)  # X in per unit
         self.Bpu = ((self.C * Line.w) * Zbase)   # B in per unit
+        print("DSL = ", self.dsl, "DSC = ", self.dsc)
         print("Rpu = ", self.Rpu, "   Xpu = ", self.Xpu, "   Bpu = ", self.Bpu)
 
     def findL(self):
         Din = self.deq / self.dsl
-        L = (2 * (10 ** (-7)) * m.log(Din)) * self.length
+        L = (2 * (10 ** (-7)) * m.log(Din)) * self.length * 1609.344
+        print(L)
         return L
 
     def findC(self):

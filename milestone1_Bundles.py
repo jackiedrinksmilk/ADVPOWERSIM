@@ -16,12 +16,11 @@ class Bundles:
             self.d: float = d
             self.conductorData: ConductorData = conductorData
 
-            self.R = self.conductorData.r / self.num
+            self.R = self.conductorData.r
             self.gmr = self.conductorData.gmr
-            self.cond_res = conductorData.res
+            self.res = conductorData.res / self.num
             self.dsl = Bundles.find_dsl(self)
             self.dsc = Bundles.find_dsc(self)
-            self.res = self.cond_res / self.num
 
     # function for finding DSL depending on bundle number
     def find_dsl(self) -> float:
