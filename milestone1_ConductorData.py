@@ -1,4 +1,4 @@
-
+ 
 # This class is for the mathematical values associated with
 # ACSR Conductors that will be used to calculate impedences in other parts of the program
 
