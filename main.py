@@ -3,6 +3,10 @@ from milestone1_ConductorData import ConductorData
 from milestone1_geometry import Geometry
 from milestone1_Bundles import Bundles
 
+
+# this script inserts the specific line, generator, and transformer network connections
+# for the purpose of this project
+
 PartridgeData = ConductorData(0.26, 0.321, 0.385)
 BundledPartridgeData = Bundles(2, PartridgeData, 18.0)
 PhaseGeometry = Geometry(0, 0, 9.75, 0, 19.5, 0)
