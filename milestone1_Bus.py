@@ -39,7 +39,7 @@ class Bus:
             self.P = value1
 
         # check if valid input for bus type
-        else
+        else:
             print("Invalid type enter. Please enter one of the following: 1) Swing, 2) Load, or 3) Voltage Controlled")
 
 
